@@ -1,0 +1,53 @@
+h1 {
+	text-align: center;
+}
+
+form {
+	max-width: 400px;
+	margin-inline: auto;
+	display: flex;
+}
+
+form input {
+	flex: 1;
+	padding: 5px 10px;
+	font-weight: bold;
+}
+
+form button {
+	padding-inline: 20px;
+}
+
+ul {
+	max-width: 400px;
+	padding: 0;
+	margin-inline: auto;
+	list-style-type: none;
+	list-style-position: outside;
+
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+ul li {
+	background-color: hsl(0 0% 0% / 0.2);
+	padding: 5px;
+	display: flex;
+	gap: 10px;
+}
+
+ul button {
+	margin-left: auto;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+li span::first-letter {
+	text-transform: uppercase;
+}
+
+ul li input:checked + span {
+	text-decoration: line-through;
+}
